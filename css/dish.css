@@ -1,0 +1,29 @@
+main{
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-template-rows: repeat(4, 1fr);
+	grid-gap: 5px;
+	grid-template-areas: 
+		"i i b b"
+		"i i b b"
+		"a a b b"
+		"a a b b";
+}
+p#first{
+	grid-area: b;
+	border: solid;
+}
+img#mains{
+	grid-area: i;
+	object-fit: cover;
+	overflow: hidden;
+	max-height: 90%;
+	max-width: 90%;
+	margin: auto;
+	padding: 10px;
+	display: block;
+}
+p#ingreed{
+	grid-area: a;
+	border: solid;
+}
