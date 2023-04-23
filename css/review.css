@@ -1,0 +1,12 @@
+#dropdown, #radio, #textbox, #submit{
+	text-align: center;
+}
+#dropdown{
+	margin: 30px;
+}
+#radio, #textbox{
+	margin-bottom: 20px;
+}
+#submit > input{
+	margin-right: 190px ;
+}
