@@ -3,6 +3,7 @@
 	<head>
 		<title id="title"></title>
 		<link rel="stylesheet" href="css/template.css">
+		<link rel="stylesheet" href="css/review.css">
 	</head>
 	<body>
 		<header id="headers">Reviews</header>
@@ -13,7 +14,51 @@
 			<a class="tabs" href="review.html">Reviews</a>
 		</nav>
 		<main>
-		
+			<form action="">
+				<div id="dropdown">
+					<label>Recipe</label>
+					<input list="recipes" name="recipes">
+					<datalist id="recipes">
+						<option value="poori">
+						<option value="samosa">
+						<option value="panipuri">
+						<option value="chicken pakora">
+						<option value="poppadoms">
+						<option value="vegetable pakora">
+						<option value="masala">
+						<option value="jalfrezi">
+						<option value="bhuna">
+						<option value="vindaloo">
+						<option value="korma">
+						<option value="paneer">
+					</datalist>
+				</div>
+				</br>
+				<div id="radio">
+					<label>rating 1 to 5</label>
+					</br>
+					<input type="radio" id="html" name="rating" value="1">
+					<label for="1">1</label>
+					<input type="radio" id="2" name="rating" value="2">
+					<label for="2">2</label>
+					<input type="radio" id="3" name="rating" value="3">
+					<label for="3">3</label>
+					<input type="radio" id="4" name="rating" value="4">
+					<label for="4">4</label>
+					<input type="radio" id="5" name="rating" value="5">
+					<label for="5">5</label>
+				</div>
+				</br>
+				<div id="textbox">
+					<label>comments (max 250 chars)</label>
+					</br>
+					<textarea maxlength="250" name="message" rows="10" cols="30"></textarea>
+				</div>
+				</br>
+				<div id="submit">
+					<input onclick="alert('form submitted successfully')" type="submit" value="submit">
+				</div>
+			</form>
 		</main>
 				
 		<aside id="aside1"></aside>
