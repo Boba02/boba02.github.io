@@ -1,0 +1,38 @@
+main{
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-template-rows: repeat(4, 1fr);
+	grid-gap: 5px;
+	grid-template-areas: 
+		"i i b b"
+		"i i b b"
+		"a a b b"
+		"a a b b";
+}
+#first{
+	grid-area: b;
+}
+img#mains{
+	grid-area: i;
+	object-fit: cover;
+	overflow: hidden;
+	max-height: 90%;
+	max-width: 90%;
+	margin: auto;
+	padding: 10px;
+	display: block;
+}
+#ingreed{
+	grid-area: a;
+	padding: 0 15px;
+}
+h2{
+	text-align: center;
+}
+#list, #recipes{
+	font-size: 1.25em;
+	padding: 15px inherit;
+}
+#recipes li{
+	margin: 20px 0;
+}
